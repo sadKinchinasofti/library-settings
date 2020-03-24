@@ -23,7 +23,7 @@ type repolibrary struct{}
 func getSession() *session.Session {
 	config := &aws.Config{
 		Region:   aws.String("ap-south-1"),
-		Endpoint: aws.String("http://172.17.0.2:8000"),
+		Endpoint: aws.String("http://localhost:8000"),
 	}
 
 	sess := session.Must(session.NewSession(config))
